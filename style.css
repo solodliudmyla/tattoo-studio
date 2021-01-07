@@ -9,7 +9,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.hero {
+ .wrapper-hero {
 	height: 100vh;
 	background-image: url("img/bg/tattoo-1.jpg");
 	background-repeat: no-repeat;
@@ -18,9 +18,11 @@ body {
 	background-attachment: fixed;
 }
 
-.wraper-hero {
+.hero{
 	height: 100vh;
 	background: rgba(0, 0, 0, .6);
+	display: flex;
+	padding: 10px 50px;
 }
 
 .footer {
@@ -29,13 +31,13 @@ body {
 	bottom: 0;
 	width: 100%;
 	background-color: black;
-	text-align: center;
 	height: 10vh;
+	color: ghostwhite;
 }
 
 h1 {
-	font-size: 60px;
-	letter-spacing: 5px;
+	font-size: 20vh;
+	letter-spacing: 10px;
 	font-family: 'Pirata One', cursive;
 	text-align: center;
 	color: ghostwhite;
@@ -45,38 +47,45 @@ h2 {
 	font-family: 'Bad Script', cursive;
 	text-align: center;
 	color: ghostwhite;
+	font-size: x-large;
 }
 
-.about {
-	display: flex;
-	flex-flow: wrap;
-	padding: 10px 50px;
-}
-
-.about-header, .about-description {
+.hero-header, .hero-description {
 	flex: 0 0 50%;
 	padding: 20px;
-	padding-right: 60px;
+	padding-right: 70px;
 }
 
-.about-header {
-	font-weight: bold;
-	font-size: 60px;
-	text-align: right;
-}
 
-.about-description {
+
+.hero-description {
 	margin-top: 20px;
 	font-size: large;
 }
 
-.about-description p {
-	line-height: 1.5;
-	font-size: larger;
+.hero-description p {
+	line-height: 2;
+	font-size: x-large;
+	color: white;
 }
 
-.about-description h2 {
-	color: black;
+.hero-description h2 {
 	text-align: left;
+	font-size: 45px;
+}
+
+
+
+
+.safety h2{
 	font-size: xx-large;
+	text-align: left;
+}
+
+.safety{
+padding: 15px;
+}
+.safety p{
+	font-size: larger;
+	color: #616161;
 }
