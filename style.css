@@ -1,12 +1,16 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-body{
+
+body {
 	height: 300vh;
+	color: ghostwhite;
+	font-family: 'Open Sans', sans-serif;
 }
-.hero{
+
+.hero {
 	height: 100vh;
 	background-image: url("img/bg/tattoo-1.jpg");
 	background-repeat: no-repeat;
@@ -14,10 +18,10 @@ body{
 	background-position: center;
 	background-attachment: fixed;
 }
-.wraper-hero{
-	height: 100vh;
 
-	background:rgba(0,0,0,.6);
+.wraper-hero {
+	height: 100vh;
+	background: rgba(0, 0, 0, .6);
 }
 
 .footer {
@@ -26,7 +30,19 @@ body{
 	bottom: 0;
 	width: 100%;
 	background-color: black;
-	color: white;
 	text-align: center;
 	height: 10vh;
+}
+
+h1 {
+	font-size: 60px;
+	letter-spacing: 5px;
+	font-family: 'Pirata One', cursive;
+	text-align: center;
+
+}
+
+h2 {
+	font-family: 'Bad Script', cursive;
+	text-align: center;
 }
