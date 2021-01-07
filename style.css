@@ -6,7 +6,6 @@
 
 body {
 	height: 300vh;
-	color: ghostwhite;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -39,10 +38,45 @@ h1 {
 	letter-spacing: 5px;
 	font-family: 'Pirata One', cursive;
 	text-align: center;
-
+	color: ghostwhite;
 }
 
 h2 {
 	font-family: 'Bad Script', cursive;
 	text-align: center;
+	color: ghostwhite;
+}
+
+.about {
+	display: flex;
+	flex-flow: wrap;
+	padding: 10px 50px;
+}
+
+.about-header, .about-description {
+	flex: 0 0 50%;
+	padding: 20px;
+	padding-right: 60px;
+}
+
+.about-header {
+	font-weight: bold;
+	font-size: 60px;
+	text-align: right;
+}
+
+.about-description {
+	margin-top: 20px;
+	font-size: large;
+}
+
+.about-description p {
+	line-height: 1.5;
+	font-size: larger;
+}
+
+.about-description h2 {
+	color: black;
+	text-align: left;
+	font-size: xx-large;
 }
