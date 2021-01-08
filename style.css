@@ -25,6 +25,11 @@ h2 {
 	color: ghostwhite;
 	font-size: x-large;
 }
+h3{
+	font-family: 'Bad Script', cursive;
+	font-size: large;
+	font-weight: 600;
+}
 
  .background-hero {
 	min-height: 100vh;
@@ -41,7 +46,6 @@ h2 {
 }
 
 .hero-description p {
-
 	font-size: x-large;
 	color: white;
 	display: block;
@@ -62,17 +66,24 @@ h2 {
 	background-color: black;
 	height: 10vh;
 	color: ghostwhite;
+	font-size: x-large;
 }
-.footer p{
+.menu-item{
+	height: 100%;
+}
+.menu-item{
+	display: inline-block;
+}
+.footer .dropdown{
 	display: inline-block;
 }
 
-.safety h2{
+.safety h2, .care h2, .pain h2, .price h2{
 	font-size: xx-large;
 	text-align: left;
+	color: black;
+	margin-bottom: 2rem;
 }
-
-.safety{
-padding: 15px;
+.care, .price{
+	background-color: #ECEAEB;
 }
-
