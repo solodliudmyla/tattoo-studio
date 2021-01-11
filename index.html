@@ -17,7 +17,52 @@
 </head>
 <body>
 <section class="background-hero">
-	<div class="hero">
+	<div class="container">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top nav-fill">
+		<a class="navbar-brand" href="#">Главная</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto nav-fill">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Обо мне</a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="#safety">Безопасность</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#galery">Мои работы</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#price">Цена</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Отзывы</a>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Почитать
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#pain">Как снизить болевые ощущения</a>
+						<a class="dropdown-item" href="#care">Уход за тату</a>
+						<a class="dropdown-item" href="#">Инструменты</a>
+						<a class="dropdown-item" href="#">Противопоказания</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Стили татуировок</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Записаться</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	</div>
+	<div class="hero" id="hero">
 		<div class="container">
 			<div class="row">
 				<div class="hero-header col mt-5">
@@ -42,7 +87,7 @@
 </section>
 <main>
 
-	<section class="safety container mt-5">
+	<section class="safety container mt-5" id="safety">
 		<h2>Безопасность татуировки: стерилизация и дезинфекция</h2>
 		<p>Пожалуй, главным фактором, делающим тату студию по-настоящему профессиональной, является максимальная
 			безопасность для вашего здоровья. Не секрет, что при не должном внимании к таким, казалось бы, базовым вещам как:
@@ -81,7 +126,7 @@
 			профессиональных студиях у настоящих профессионалов.</p><br>
 	</section>
 	<!-- Swiper -->
-	<section class="swiper">
+	<section class="swiper" id="galery">
 		<div class="swiper-container gallery-top">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide" style="background-image:url(img/gallery/panda.jpg)"></div>
@@ -118,7 +163,7 @@
 		</div>
 	</section>
 
-	<section class="care container pt-4 pb-4">
+	<section class="care container pt-4 pb-4" id="care">
 		<h2>Уход за татуировкой</h2>
 		<p>Итоговое качество вашей татуировки полностью зависит от того как вы будете ухаживать за ней после сеанса и очень
 			важно уделить этому аспекту особое внимание.</p><br>
@@ -147,7 +192,7 @@
 		<p>Важно понимать, что финальный вид татуировки зависит от вашей сознательности и ответственного подхода к
 			уходу.</p>
 	</section>
-	<section class="pain container pt-4">
+	<section class="pain container pt-4" id="pain">
 		<h2>Как снизить болевые ощущения</h2>
 		<p>На сеанс лучше всего идти хорошенько отдохнувшим. Если Вы не выспались или сильно устали, то Ваше болевые
 			ощущения будут намного сильнее, нежели если вы придёте бодрым и готовым к сеансу.</p>
@@ -165,7 +210,7 @@
 		<p>Не волнуйтесь. Расслабьтесь и доверьтесь мастеру. </p>
 	</section>
 
-	<section class="price container pt-5">
+	<section class="price container pt-5" id="price">
 		<h2>Цены</h2>
 		<p>Консультация и разработка эскиза (проекта) — бесплатно!</p>
 		<h2>От чего зависят цены на тату</h2>
@@ -178,32 +223,6 @@
 	</section>
 
 </main>
-<div class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="dropdown col">
-				<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-				   aria-haspopup="true" aria-expanded="false">
-					Почитать
-				</a>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-					<a class="dropdown-item" href="#">Безопасность</a>
-					<a class="dropdown-item" href="#">Уход за тату</a>
-					<a class="dropdown-item" href="#">Как снизить болевые ощущения</a>
-					<a class="dropdown-item" href="#">Инструменты</a>
-					<a class="dropdown-item" href="#">Противопоказания</a>
-					<a class="dropdown-item" href="#">Стили татуировок</a>
-				</div>
-			</div>
-			<div class="menu-item col">Мои работы</div>
-			<div class="menu-item col">Цены</div>
-			<div class="menu-item col">Отзывы</div>
-			<div class="menu-item col">Записаться</div>
-			<div class="menu-item col">Главная</div>
-		</div>
-	</div>
-
-</div>
 
 
 <script src="swiper-bundle.js"></script>

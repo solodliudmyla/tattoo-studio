@@ -32,7 +32,8 @@ h3{
 }
 
  .background-hero {
-	min-height: 100vh;
+	 padding-top: 10vh;
+	min-height: 90vh;
 	background-image: url("img/bg/tattoo-1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -41,7 +42,8 @@ h3{
 }
 
 .hero{
-	min-height: 100vh;
+	padding-top: 10vh;
+	min-height: 90vh;
 	background: rgba(0, 0, 0, .6);
 }
 
@@ -56,6 +58,9 @@ h3{
 .hero-description h2 {
 	text-align: left;
 	font-size: 45px;
+}
+.navbar{
+	height: 10vh;
 }
 
 .footer {
@@ -87,6 +92,7 @@ h3{
 .care, .price{
 	background-color: #ECEAEB;
 }
+
 /*------------------------*/
 .swiper{
 	background: #000;
@@ -126,4 +132,8 @@ h3{
 
 .gallery-thumbs .swiper-slide-thumb-active {
 	opacity: 1;
+}
+
+.swiper-button-prev.swiper-button-white, .swiper-button-next.swiper-button-white {
+	color: white;
 }
