@@ -21,10 +21,17 @@ h1 {
 
 h2 {
 	font-family: 'Bad Script', cursive;
+	font-size: xx-large;
+	text-align: left;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+.hero h2{
+	font-size: x-large;
 	text-align: center;
 	color: ghostwhite;
-	font-size: x-large;
 }
+
 h3{
 	font-family: 'Bad Script', cursive;
 	font-size: large;
@@ -84,14 +91,10 @@ h3{
 	display: inline-block;
 }
 
-.safety h2, .care h2, .pain h2, .price h2{
-	font-size: xx-large;
-	text-align: left;
-	color: black;
-	margin-bottom: 2rem;
-}
-.care, .price{
-	background-color: #ECEAEB;
+
+.care, .price, .pain, .safety{
+
+	margin-top: 10vh;
 }
 
 /*------------------------*/
@@ -138,6 +141,7 @@ h3{
 .swiper-button-prev.swiper-button-white, .swiper-button-next.swiper-button-white {
 	color: white;
 }
+
 li{
 	border-bottom: 1px solid white;
 }
@@ -150,4 +154,7 @@ li{
 	.hero-description p {
 		font-size: x-large;
 	}
+}
+.about, .feedback, .singup{
+	min-height: 40vh;
 }
