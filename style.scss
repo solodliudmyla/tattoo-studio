@@ -1,3 +1,9 @@
+$font-head1: 'Pirata One', cursive;
+$font-head2: 'Bad Script', cursive;
+$font-paragraph: 'Open Sans', sans-serif;
+$color-light: ghostwhite;
+$color-dark: #616161;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,30 +11,31 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #616161;
+  font-family: $font-paragraph;
+  color: $color-dark;
   font-weight: normal;
   font-size: large;
 }
 
 h1 {
-  font-family: "Pirata One", cursive;
-  color: ghostwhite;
+  font-family: $font-head1;
+  color: $color-light;
   font-size: 7rem;
   letter-spacing: 10px;
   text-align: center;
 }
 
 h2 {
-  font-family: "Bad Script", cursive;
+  font-family: $font-head2;
   font-size: xx-large;
   text-align: left;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
+
 h3 {
-  font-family: "Bad Script", cursive;
+  font-family: $font-head2;
   font-size: large;
   font-weight: 600;
 }
@@ -45,25 +52,30 @@ h3 {
 
 .hero {
   min-height: 90vh;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, .6);
 }
 
-.hero h2 {
-  color: ghostwhite;
-  font-size: x-large;
-  text-align: center;
+.hero {
+  h2 {
+    color: $color-light;
+    font-size: x-large;
+    text-align: center;
+  }
 }
 
-.hero-description p {
-  font-size: small;
-  color: ghostwhite;
-  display: block;
-  text-align: left;
-  font-weight: 400;
-}
-.hero-description h2 {
-  text-align: left;
-  font-size: 45px;
+.hero-description {
+  p {
+    font-size: small;
+    color: $color-light;
+    display: block;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  h2 {
+    text-align: left;
+    font-size: 45px;
+  }
 }
 
 .navbar {
@@ -88,7 +100,10 @@ li {
   border-bottom: 1px solid white;
 }
 
+
 /*------- swiper -----------------*/
+
+
 .swiper {
   background: #000;
   color: #000;
@@ -121,57 +136,55 @@ li {
   padding: 10px 0;
 }
 
-.gallery-thumbs .swiper-slide {
-  height: 100%;
-  opacity: 0.4;
-}
-.gallery-thumbs .swiper-slide-thumb-active {
-  opacity: 1;
+.gallery-thumbs {
+  .swiper-slide {
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .swiper-slide-thumb-active {
+    opacity: 1;
+  }
 }
 
 .swiper-button-prev.swiper-button-white, .swiper-button-next.swiper-button-white {
-  color: ghostwhite;
+  color: $color-light;
 }
-
 .about, .feedback, .singup {
   min-height: 40vh;
 }
+
 
 @media (min-width: 385px) {
   .hero-description p {
     font-size: large;
   }
 }
+
 @media (min-width: 500px) {
   .hero-description p {
     font-size: x-large;
   }
-
   .name-top {
     display: block;
   }
-
   .name-button {
     display: none;
   }
 }
+
 @media (min-width: 992px) {
   li {
     border-bottom: 0;
   }
-
   .navbar-expand-lg .navbar-nav {
     width: 100%;
     justify-content: center;
   }
-
   .name-top {
     display: none;
   }
-
   .name-button {
     display: block;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
