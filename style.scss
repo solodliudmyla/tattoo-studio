@@ -29,9 +29,7 @@ h1 {
 h2 {
   font-family: $font-head2;
   font-size: xx-large;
-  text-align: left;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  text-align: center;
 }
 
 
@@ -93,7 +91,7 @@ h5,h4,h3{
 }
 
 .care, .price, .pain, .safety {
-  margin-top: 10vh;
+  margin-top: 11vh;
 }
 
 .dropdown-menu {
@@ -104,7 +102,9 @@ li {
   border-bottom: 1px solid white;
 }
 
-
+.col img{
+  width: 100%;
+}
 /*------- swiper -----------------*/
 
 
@@ -154,10 +154,7 @@ li {
 .swiper-button-prev.swiper-button-white, .swiper-button-next.swiper-button-white {
   color: $color-light;
 }
-.about, .feedback, .singup {
-  min-height: 40vh;
-}
-
+//----------media-----------------------
 
 @media (min-width: 385px) {
   .hero-description p {
