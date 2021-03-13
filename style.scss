@@ -3,6 +3,7 @@ $font-head2: 'Bad Script', cursive;
 $font-paragraph: 'Open Sans', sans-serif;
 $color-light: ghostwhite;
 $color-dark: #616161;
+$color-head:black;
 
 * {
   margin: 0;
@@ -38,6 +39,9 @@ h3 {
   font-family: $font-head2;
   font-size: large;
   font-weight: 600;
+}
+h5,h4,h3{
+  color: $color-head;
 }
 
 .background-hero {
