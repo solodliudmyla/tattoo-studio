@@ -38,7 +38,7 @@ h5, h4, h3 {
 .background-hero {
   padding-top: 10vh;
   min-height: 90vh;
-  background-image: url("img/bg/tattoo-1.jpg");
+  background-image: url("img/bg/tattoo-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -57,7 +57,7 @@ h5, h4, h3 {
 }
 
 .hero-description p {
-  font-size: small;
+  font-size: large;
   color: ghostwhite;
   display: block;
   text-align: left;
@@ -112,8 +112,9 @@ li {
 }
 
 .swiper-slide {
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .gallery-top {
@@ -139,11 +140,6 @@ li {
   color: ghostwhite;
 }
 
-@media (min-width: 385px) {
-  .hero-description p {
-    font-size: large;
-  }
-}
 @media (min-width: 500px) {
   .hero-description p {
     font-size: x-large;
@@ -173,6 +169,10 @@ li {
 
   .name-button {
     display: block;
+  }
+
+  .hero-description p {
+    font-size: small;
   }
 }
 

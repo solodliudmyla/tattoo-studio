@@ -3,7 +3,7 @@ $font-head2: 'Bad Script', cursive;
 $font-paragraph: 'Open Sans', sans-serif;
 $color-light: ghostwhite;
 $color-dark: #616161;
-$color-head:black;
+$color-head: black;
 
 * {
   margin: 0;
@@ -38,14 +38,15 @@ h3 {
   font-size: large;
   font-weight: 600;
 }
-h5,h4,h3{
+
+h5, h4, h3 {
   color: $color-head;
 }
 
 .background-hero {
   padding-top: 10vh;
   min-height: 90vh;
-  background-image: url("img/bg/tattoo-1.jpg");
+  background-image: url("img/bg/tattoo-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -67,7 +68,7 @@ h5,h4,h3{
 
 .hero-description {
   p {
-    font-size: small;
+    font-size: large;
     color: $color-light;
     display: block;
     text-align: left;
@@ -102,9 +103,10 @@ li {
   border-bottom: 1px solid white;
 }
 
-.col img{
+.col img {
   width: 100%;
 }
+
 /*------- swiper -----------------*/
 
 
@@ -125,8 +127,9 @@ li {
 }
 
 .swiper-slide {
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .gallery-top {
@@ -154,13 +157,8 @@ li {
 .swiper-button-prev.swiper-button-white, .swiper-button-next.swiper-button-white {
   color: $color-light;
 }
-//----------media-----------------------
 
-@media (min-width: 385px) {
-  .hero-description p {
-    font-size: large;
-  }
-}
+//----------media-----------------------
 
 @media (min-width: 500px) {
   .hero-description p {
@@ -188,4 +186,9 @@ li {
   .name-button {
     display: block;
   }
+  .hero-description p {
+    font-size: small;
+  }
 }
+
+
