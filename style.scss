@@ -1,9 +1,18 @@
-$font-head1: 'Pirata One', cursive;
-$font-head2: 'Bad Script', cursive;
-$font-paragraph: 'Open Sans', sans-serif;
-$color-light: ghostwhite;
-$color-dark: #616161;
+$font-h1: 'Pirata One', cursive;
+$font-head2: 'Lobster', cursive;
+$font-paragraph: 'Oswald', sans-serif;
+
+$color-light: white;
 $color-head: black;
+$color-2: #616161;
+$color-3: #BF9456;
+
+$bg-color1:#23262A;
+$bg-color2:#1A1D21;
+$bg-color3:#0D0F11;
+
+$cursor-light:url("img/cursor/blue.png"), auto;
+$cursor-dark:url("img/cursor/small.png"), auto;
 
 * {
   margin: 0;
@@ -13,13 +22,12 @@ $color-head: black;
 
 body {
   font-family: $font-paragraph;
-  color: $color-dark;
   font-weight: normal;
   font-size: large;
 }
 
 h1 {
-  font-family: $font-head1;
+  font-family: $font-h1;
   color: $color-light;
   font-size: 7rem;
   letter-spacing: 10px;
@@ -51,14 +59,13 @@ h5, h4, h3 {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  cursor: $color-light;
 }
 
 .hero {
   min-height: 90vh;
   background: rgba(0, 0, 0, .6);
-}
 
-.hero {
   h2 {
     color: $color-light;
     font-size: x-large;
@@ -91,20 +98,118 @@ h5, h4, h3 {
   display: inline-block;
 }
 
-.care, .price, .pain, .safety {
-  margin-top: 11vh;
-}
 
 .dropdown-menu {
   left: auto;
 }
-
-li {
-  border-bottom: 1px solid white;
+.show{
+  li {
+    border: 1px solid white;
+  }
 }
+
 
 .col img {
   width: 100%;
+}
+#about{
+  color: white;
+  background-color: $bg-color1;
+  padding-bottom: 2rem;
+  h2{
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    color: $color-3;
+  }
+  .about-description{
+    padding: 2rem;
+    background-color: $bg-color3;
+  }
+}
+
+
+#safe,#singUp {
+  background-color: $bg-color1;
+  color: white;
+  cursor: $cursor-dark;
+  h2 {
+    padding: 4rem;
+  }
+  padding-bottom: 2rem;
+}
+
+#contraindications {
+  background-image: url("img/bg/hqtexture.com.jpg");
+  background-size: cover;
+  padding-left: 30px;
+  padding-bottom: 4rem;
+
+  h2 {
+    font-size: 4rem;
+    padding-top: 5rem;
+  }
+
+  h4 {
+    padding: 2rem 0;
+  }
+}
+
+
+#care {
+  border: 1px black solid;
+  padding: 2rem;
+
+  li {
+    padding: 1rem;
+  }
+
+  h2 {
+    padding: 2rem;
+  }
+}
+
+h5 {
+  font-weight: bold;
+  font-family: $font-head2;
+  padding: 2rem;
+}
+#works{
+  background-color: black;
+  color: #BF9456;
+  margin: 0;
+}
+.btn{
+  background-color: $color-3;
+}
+a{
+  color: $color-3;
+  font-style: italic;
+}
+#price{
+  background-color: #EAEAEA;
+  background-image: url("img/bg/hqtexture.com.jpg");
+h2{
+  padding: 3rem;
+  font-size: 4rem;
+}
+  h4{
+    text-align: center;
+    padding: 1rem;
+    color: #505050;
+    font-weight:bolder;
+  }
+  .row{
+    justify-content: space-around;
+  }
+  .col{
+    border: 2px #505050 solid;
+    margin: 2rem;
+    background-color: white;
+  }
+  .price-num{
+    color :$color-3;
+    font-style: italic;
+  }
 }
 
 /*------- swiper -----------------*/

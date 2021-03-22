@@ -5,28 +5,27 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #616161;
+  font-family: "Oswald", sans-serif;
   font-weight: normal;
   font-size: large;
 }
 
 h1 {
   font-family: "Pirata One", cursive;
-  color: ghostwhite;
+  color: white;
   font-size: 7rem;
   letter-spacing: 10px;
   text-align: center;
 }
 
 h2 {
-  font-family: "Bad Script", cursive;
+  font-family: "Lobster", cursive;
   font-size: xx-large;
   text-align: center;
 }
 
 h3 {
-  font-family: "Bad Script", cursive;
+  font-family: "Lobster", cursive;
   font-size: large;
   font-weight: 600;
 }
@@ -43,22 +42,22 @@ h5, h4, h3 {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  cursor: white;
 }
 
 .hero {
   min-height: 90vh;
   background: rgba(0, 0, 0, 0.6);
 }
-
 .hero h2 {
-  color: ghostwhite;
+  color: white;
   font-size: x-large;
   text-align: center;
 }
 
 .hero-description p {
   font-size: large;
-  color: ghostwhite;
+  color: white;
   display: block;
   text-align: left;
   font-weight: 400;
@@ -78,20 +77,114 @@ h5, h4, h3 {
   display: inline-block;
 }
 
-.care, .price, .pain, .safety {
-  margin-top: 11vh;
-}
-
 .dropdown-menu {
   left: auto;
 }
 
-li {
-  border-bottom: 1px solid white;
+.show li {
+  border: 1px solid white;
 }
 
 .col img {
   width: 100%;
+}
+
+#about {
+  color: white;
+  background-color: #23262A;
+  padding-bottom: 2rem;
+}
+#about h2 {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  color: #BF9456;
+}
+#about .about-description {
+  padding: 2rem;
+  background-color: #0D0F11;
+}
+
+#safe, #singUp {
+  background-color: #23262A;
+  color: white;
+  cursor: url("img/cursor/small.png"), auto;
+  padding-bottom: 2rem;
+}
+#safe h2, #singUp h2 {
+  padding: 4rem;
+}
+
+#contraindications {
+  background-image: url("img/bg/hqtexture.com.jpg");
+  background-size: cover;
+  padding-left: 30px;
+  padding-bottom: 4rem;
+}
+#contraindications h2 {
+  font-size: 4rem;
+  padding-top: 5rem;
+}
+#contraindications h4 {
+  padding: 2rem 0;
+}
+
+#care {
+  border: 1px black solid;
+  padding: 2rem;
+}
+#care li {
+  padding: 1rem;
+}
+#care h2 {
+  padding: 2rem;
+}
+
+h5 {
+  font-weight: bold;
+  font-family: "Lobster", cursive;
+  padding: 2rem;
+}
+
+#works {
+  background-color: black;
+  color: #BF9456;
+  margin: 0;
+}
+
+.btn {
+  background-color: #BF9456;
+}
+
+a {
+  color: #BF9456;
+  font-style: italic;
+}
+
+#price {
+  background-color: #EAEAEA;
+  background-image: url("img/bg/hqtexture.com.jpg");
+}
+#price h2 {
+  padding: 3rem;
+  font-size: 4rem;
+}
+#price h4 {
+  text-align: center;
+  padding: 1rem;
+  color: #505050;
+  font-weight: bolder;
+}
+#price .row {
+  justify-content: space-around;
+}
+#price .col {
+  border: 2px #505050 solid;
+  margin: 2rem;
+  background-color: white;
+}
+#price .price-num {
+  color: #BF9456;
+  font-style: italic;
 }
 
 /*------- swiper -----------------*/
@@ -137,7 +230,7 @@ li {
 }
 
 .swiper-button-prev.swiper-button-white, .swiper-button-next.swiper-button-white {
-  color: ghostwhite;
+  color: white;
 }
 
 @media (min-width: 500px) {
