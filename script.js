@@ -19,4 +19,6 @@ var galleryTop = new Swiper('.gallery-top', {
     swiper: galleryThumbs,
   },
 });
+var video = document.getElementById("myVideo");
+video.play();
 
