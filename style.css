@@ -42,7 +42,6 @@ h5, h4, h3 {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  cursor: white;
 }
 
 .hero {
@@ -104,16 +103,6 @@ h5, h4, h3 {
   background-color: #0D0F11;
 }
 
-#safe, #singUp {
-  background-color: #23262A;
-  color: white;
-  cursor: url("img/cursor/small.png"), auto;
-  padding-bottom: 2rem;
-}
-#safe h2, #singUp h2 {
-  padding: 4rem;
-}
-
 #contraindications {
   background-image: url("img/bg/hqtexture.com.jpg");
   background-size: cover;
@@ -126,17 +115,6 @@ h5, h4, h3 {
 }
 #contraindications h4 {
   padding: 2rem 0;
-}
-
-#care {
-  border: 1px black solid;
-  padding: 2rem;
-}
-#care li {
-  padding: 1rem;
-}
-#care h2 {
-  padding: 2rem;
 }
 
 h5 {
@@ -153,11 +131,6 @@ h5 {
 
 .btn {
   background-color: #BF9456;
-}
-
-a {
-  color: #BF9456;
-  font-style: italic;
 }
 
 #price {
@@ -185,6 +158,31 @@ a {
 #price .price-num {
   color: #BF9456;
   font-style: italic;
+}
+
+#safe {
+  background-color: #1A1D21;
+  color: white;
+  padding-bottom: 1rem;
+}
+#safe h2 {
+  color: #BF9456;
+  padding: 2rem;
+}
+
+#singUp {
+  cursor: url("img/cursor/cursor-tattoo.png"), auto;
+}
+#singUp a {
+  color: #BF9456;
+}
+#singUp .btn {
+  float: right;
+  margin: 0.5rem;
+}
+#singUp h5 {
+  padding: 1rem;
+  text-align: center;
 }
 
 /*------- swiper -----------------*/

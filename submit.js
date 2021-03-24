@@ -3,14 +3,17 @@ function sendMail() {
     event.preventDefault();
     // generate a five digit number for the contact_number variable
     this.contact_number.value = Math.random() * 100000 | 0;
-    console.dir(this);
     // these IDs from the previous steps
     emailjs.sendForm('contact_service', 'contact_form', this)
       .then(function() {
         console.log('SUCCESS!');
       }, function(error) {
         console.log('FAILED...', error);
-      });
+      })
+   .then(document.getElementById('contact-form').reset())
+     // .then(document.getElementById('contact-form').modal('hide'))
+      .then ($('#singUp').modal('hide'))
   });
+
 }
 

@@ -51,7 +51,7 @@
 						<a class="nav-link" href="#price">Стоимость</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#singUp">Записаться</a>
+						<a class="nav-link" role="button" data-toggle="modal" data-target="#singUp" type="button">Записаться</a>
 					</li>
 				</ul>
 			</div>
@@ -75,7 +75,7 @@
 					<p class="badge">Перекрытие и исправление старого тату</p>
 					<p class="badge">Доработка существующего тату</p>
 					<p class="badge">Обновление тату</p>
-					<button type="button" class="btn btn-outline-light ml-3 mb-3"><a href="#singUp">Записаться</a></button>
+					<button data-toggle="modal" data-target="#singUp" type="button" class="btn ml-3 mb-3">Записаться</button>
 				</div>
 			</div>
 		</div>
@@ -180,14 +180,16 @@
 			введенными пигментами, так и на последующее заживление татуировки.</p>
 	</article>
 	<article id="safe">
-		<h2>Безопасность</h2>
-		<p>Чтобы защитить каждого клиента от возможности проникновения бактерий во время нанесения тату в нашем салоне
-			применяют только одноразовые материалы, которые контактируют с кожей (иглы, колпачки, носики).
-			Все распечатывается в присутствии клиента. На рабочем месте мы также используем барьерную защиту — покрываем
-			кресла
-			и кушетки одноразовой пеленкой, тату-машинку помещаем в специальный полиэтиленовый чехол. Мастер работает только
-			в одноразовых медицинских перчатках. Все поверхности обрабатываются специальными бактерицидными средствами перед
-			каждым клиентом. </p>
+		<div class="container">
+			<h2>Безопасность</h2>
+			<p>Чтобы защитить каждого клиента от возможности проникновения бактерий во время нанесения тату в нашем салоне
+				применяют только одноразовые материалы, которые контактируют с кожей (иглы, колпачки, носики).
+				Все распечатывается в присутствии клиента. На рабочем месте мы также используем барьерную защиту — покрываем
+				кресла
+				и кушетки одноразовой пеленкой, тату-машинку помещаем в специальный полиэтиленовый чехол. Мастер работает только
+				в одноразовых медицинских перчатках. Все поверхности обрабатываются специальными бактерицидными средствами перед
+				каждым клиентом. </p>
+		</div>
 	</article>
 	<section id="price">
 		<h2>Стоимость</h2>
@@ -213,40 +215,45 @@
 	</section>
 </main>
 
-<section id="singUp">
-	<h2>Записаться</h2>
-	<div class="tel container d-flex justify-content-start">
-		<p class="mr-3">Позвоните нам</p>
-		<a href="tel:+380956382732">095-638-27-32</a>
-	</div>
-	<div class="container">
-		<h5 class="mb-3">Или напишите сообщение</h5>
+<section id="singUp" tabindex="-1" role="dialog" class="modal fade">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
 
-		<form id="contact-form">
-			<input type="hidden" name="contact_number">
-
-			<div class="form-group">
-				<label for="user_name"></label>
-				<input type="text" name="user_name" id="user_name" class="feedback__field form-control" placeholder="Ваше имя" required="">
+			<div class="modal-header">
+				<h2 class="m-auto">Записаться</h2>
 			</div>
+			<div class="modal-body">
+				<div class="tel container d-flex justify-content-start">
+					<p class="mr-3">Позвоните нам</p>
+					<a href="tel:+380956382732">095-638-27-32</a>
+				</div>
+				<div class="container">
+					<h5>Или напишите сообщение</h5>
 
-			<div class="form-group">
-				<label for="user_email"></label>
-				<input type="email" name="user_email" class="form-control" id="user_email" aria-describedby="emailHelp"
-				       placeholder="Ваша почта или телефон">
-				<small id="emailHelp" class="form-text text-muted"><i>Мы никогда и ни при каких условиях не передадим никому адрес вашей электронной почты или другую контактную информацию</i></small>
+					<form id="contact-form">
+						<input type="hidden" name="contact_number">
+
+							<label for="user_name"></label>
+							<input type="text" name="user_name" id="user_name" class="feedback__field form-control"
+							       placeholder="Ваше имя" required>
+
+							<label for="user_email"></label>
+							<input type="email" name="user_email" class="form-control" id="user_email" aria-describedby="emailHelp"
+							       placeholder="Ваша почта или телефон" required>
+
+							<label for="message"></label>
+							<textarea id="message" class="form-group form-control" name="message" placeholder="Сообщение..."
+							          spellcheck="false" required maxlength="550"></textarea>
+
+						<small id="emailHelp" class="form-text text-muted"><i>Мы никогда и ни при каких условиях не передадим
+							никому адрес вашей электронной почты или другую контактную информацию</i></small>
+							<button type="submit" class="btn" value="Send" onclick="sendMail()">Послать</button>
+							<button type="button" class="btn" data-dismiss="modal">Закрыть</button>
+					</form>
+
+				</div>
 			</div>
-
-			<div class="form-group">
-				<label for="message"></label>
-						<textarea class="form-group form-control" name="message"
-						          placeholder="Сообщение..." id="message"
-						          onkeydown="limitText(this,30);" onkeyup="limitText(this,30);" spellcheck="false"></textarea>
-			</div>
-
-			<button type="submit" value="Send" class="btn mt-3 mb-3" onclick="sendMail()">Послать</button>
-		</form>
-
+		</div>
 	</div>
 </section>
 

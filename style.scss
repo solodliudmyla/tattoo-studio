@@ -11,8 +11,7 @@ $bg-color1:#23262A;
 $bg-color2:#1A1D21;
 $bg-color3:#0D0F11;
 
-$cursor-light:url("img/cursor/blue.png"), auto;
-$cursor-dark:url("img/cursor/small.png"), auto;
+$cursor-dark:url("img/cursor/cursor-tattoo.png"), auto;
 
 * {
   margin: 0;
@@ -59,7 +58,6 @@ h5, h4, h3 {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  cursor: $color-light;
 }
 
 .hero {
@@ -127,17 +125,6 @@ h5, h4, h3 {
   }
 }
 
-
-#safe,#singUp {
-  background-color: $bg-color1;
-  color: white;
-  cursor: $cursor-dark;
-  h2 {
-    padding: 4rem;
-  }
-  padding-bottom: 2rem;
-}
-
 #contraindications {
   background-image: url("img/bg/hqtexture.com.jpg");
   background-size: cover;
@@ -155,19 +142,6 @@ h5, h4, h3 {
 }
 
 
-#care {
-  border: 1px black solid;
-  padding: 2rem;
-
-  li {
-    padding: 1rem;
-  }
-
-  h2 {
-    padding: 2rem;
-  }
-}
-
 h5 {
   font-weight: bold;
   font-family: $font-head2;
@@ -181,10 +155,7 @@ h5 {
 .btn{
   background-color: $color-3;
 }
-a{
-  color: $color-3;
-  font-style: italic;
-}
+
 #price{
   background-color: #EAEAEA;
   background-image: url("img/bg/hqtexture.com.jpg");
@@ -211,7 +182,30 @@ h2{
     font-style: italic;
   }
 }
+#safe{
+  background-color:$bg-color2;
+  color: white;
+  h2{
+    color :$color-3;
+    padding: 2rem;
+  }
+  padding-bottom: 1rem;
+}
 
+#singUp{
+  cursor:$cursor-dark;
+  a{
+    color :$color-3;
+  }
+  .btn{
+    float: right;
+    margin: 0.5rem;
+  }
+  h5{
+    padding: 1rem;
+    text-align: center;
+  }
+}
 /*------- swiper -----------------*/
 
 
