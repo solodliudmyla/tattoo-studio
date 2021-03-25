@@ -180,14 +180,19 @@ h5 {
   min-height: 90vh;
   height: auto;
   position: relative;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 #myVideo {
   position: absolute;
-  width: auto;
+  min-height: 100%;
   height: auto;
   z-index: -10;
+  min-width: 100%;
+  width: auto;
 }
 
 /*------- swiper -----------------*/
@@ -236,7 +241,7 @@ h5 {
   color: white;
 }
 
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .hero-description p {
     font-size: x-large;
   }
