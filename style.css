@@ -34,9 +34,6 @@ h5, h4, h3 {
   color: black;
 }
 
-.hero {
-  min-height: 90vh;
-}
 .hero h2 {
   color: white;
   font-size: x-large;
@@ -138,6 +135,7 @@ h5 {
 }
 #price .row {
   justify-content: space-around;
+  margin: 0;
 }
 #price .col {
   border: 2px #505050 solid;
@@ -175,25 +173,21 @@ h5 {
 }
 
 .background-hero {
-  padding-top: 10vh;
-  width: 100%;
+  margin-top: 10vh;
+}
+
+#hero {
+  min-height: 90vh;
+  height: auto;
   position: relative;
-  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 #myVideo {
-  opacity: 0.9;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  min-width: 100%;
-  min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -1000;
-  overflow: hidden;
+  z-index: -10;
 }
 
 /*------- swiper -----------------*/

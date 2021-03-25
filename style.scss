@@ -7,11 +7,11 @@ $color-head: black;
 $color-2: #616161;
 $color-3: #BF9456;
 
-$bg-color1:#23262A;
-$bg-color2:#1A1D21;
-$bg-color3:#0D0F11;
+$bg-color1: #23262A;
+$bg-color2: #1A1D21;
+$bg-color3: #0D0F11;
 
-$cursor-dark:url("img/cursor/cursor-tattoo.png"), auto;
+$cursor-dark: url("img/cursor/cursor-tattoo.png"), auto;
 
 * {
   margin: 0;
@@ -51,7 +51,7 @@ h5, h4, h3 {
 }
 
 .hero {
-  min-height: 90vh;
+
   //background: rgba(0, 0, 0, .6);
 
   h2 {
@@ -90,7 +90,8 @@ h5, h4, h3 {
 .dropdown-menu {
   left: auto;
 }
-.show{
+
+.show {
   li {
     border: 1px solid white;
   }
@@ -100,16 +101,19 @@ h5, h4, h3 {
 .col img {
   width: 100%;
 }
-#about{
+
+#about {
   color: white;
   background-color: $bg-color1;
   padding-bottom: 2rem;
-  h2{
+
+  h2 {
     padding-top: 5rem;
     padding-bottom: 1rem;
     color: $color-3;
   }
-  .about-description{
+
+  .about-description {
     padding: 2rem;
     background-color: $bg-color3;
   }
@@ -137,86 +141,97 @@ h5 {
   font-family: $font-head2;
   padding: 2rem;
 }
-#works{
+
+#works {
   background-color: black;
   color: #BF9456;
   margin: 0;
 }
-.btn{
+
+.btn {
   background-color: $color-3;
 }
 
-#price{
+#price {
   background-color: #EAEAEA;
   background-image: url("img/bg/hqtexture.com.jpg");
-h2{
-  padding: 3rem;
-  font-size: 4rem;
-}
-  h4{
+
+  h2 {
+    padding: 3rem;
+    font-size: 4rem;
+  }
+
+  h4 {
     text-align: center;
     padding: 1rem;
     color: #505050;
-    font-weight:bolder;
+    font-weight: bolder;
   }
-  .row{
+
+  .row {
     justify-content: space-around;
+    margin: 0;
   }
-  .col{
+
+  .col {
     border: 2px #505050 solid;
     margin: 2rem;
     background-color: white;
   }
-  .price-num{
-    color :$color-3;
+
+  .price-num {
+    color: $color-3;
     font-style: italic;
   }
 }
-#safe{
-  background-color:$bg-color2;
+
+#safe {
+  background-color: $bg-color2;
   color: white;
-  h2{
-    color :$color-3;
+
+  h2 {
+    color: $color-3;
     padding: 2rem;
   }
+
   padding-bottom: 1rem;
 }
 
-#singUp{
-  cursor:$cursor-dark;
-  a{
-    color :$color-3;
+#singUp {
+  cursor: $cursor-dark;
+
+  a {
+    color: $color-3;
   }
-  .btn{
+
+  .btn {
     float: right;
     margin: 0.5rem;
   }
-  h5{
+
+  h5 {
     padding: 1rem;
     text-align: center;
   }
 }
+
 .background-hero {
-  padding-top: 10vh;
-  width: 100%;
+  margin-top: 10vh;
+//  min-height: 90vh;
+
+}
+#hero{
+  min-height: 90vh;
+  height: auto;
   position: relative;
-  height: 100vh;
+  background: rgba(black, 0.5);
 }
 #myVideo {
-  opacity: 0.9;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  min-width: 100%;
-  min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -1000;
-  overflow: hidden;
+  z-index: -10;
 }
-
 
 
 /*------- swiper -----------------*/
