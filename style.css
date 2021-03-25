@@ -96,7 +96,7 @@ h5, h4, h3 {
   padding-bottom: 4rem;
 }
 #contraindications h2 {
-  font-size: 4rem;
+  font-size: 2rem;
   padding-top: 5rem;
 }
 #contraindications h4 {
@@ -125,7 +125,7 @@ h5 {
 }
 #price h2 {
   padding: 3rem;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 #price h4 {
   text-align: center;
@@ -195,6 +195,15 @@ h5 {
   width: auto;
 }
 
+.about-img {
+  width: 100%;
+}
+
+.about-img-wrapper {
+  background-color: black;
+  padding: 1rem;
+}
+
 /*------- swiper -----------------*/
 .swiper {
   background: #000;
@@ -241,7 +250,7 @@ h5 {
   color: white;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 770px) {
   .hero-description p {
     font-size: x-large;
   }
