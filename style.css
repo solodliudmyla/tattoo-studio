@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Oswald", sans-serif;
   font-weight: normal;
@@ -12,10 +16,10 @@ body {
 
 h1 {
   font-family: "Pirata One", cursive;
-  color: white;
   font-size: 7rem;
   letter-spacing: 10px;
   text-align: center;
+  color: #BF9456;
 }
 
 h2 {
@@ -53,7 +57,7 @@ h5, h4, h3 {
 }
 
 .navbar {
-  height: 10vh;
+  height: 11vh;
   width: 100vw;
 }
 
@@ -90,10 +94,12 @@ h5, h4, h3 {
 }
 
 #contraindications {
-  background-image: url("img/bg/hqtexture.com.jpg");
+  background-image: url("img/bg/texture.webp");
   background-size: cover;
   padding-left: 30px;
   padding-bottom: 4rem;
+  margin-top: -11vh;
+  padding-top: 11vh;
 }
 #contraindications h2 {
   font-size: 2rem;
@@ -112,7 +118,8 @@ h5 {
 #works {
   background-color: black;
   color: #BF9456;
-  margin: 0;
+  margin: -11vh 0 0 0;
+  padding-top: 11vh;
 }
 
 .btn {
@@ -121,7 +128,8 @@ h5 {
 
 #price {
   background-color: #EAEAEA;
-  background-image: url("img/bg/hqtexture.com.jpg");
+  background-image: url("img/bg/texture.webp");
+  min-height: 89vh;
 }
 #price h2 {
   padding: 3rem;
@@ -150,11 +158,12 @@ h5 {
 #safe {
   background-color: #1A1D21;
   color: white;
-  padding-bottom: 1rem;
+  min-height: 89vh;
+  margin-top: -11vh;
+  padding-top: 11vh;
 }
 #safe h2 {
   color: #BF9456;
-  padding: 2rem;
 }
 
 #singUp {
@@ -211,12 +220,11 @@ h5 {
   margin: 0;
   padding: 0;
   position: relative;
-  height: 90vh;
+  height: 85vh;
 }
 
 .swiper-container {
   width: 100%;
-  height: 300px;
   margin-left: auto;
   margin-right: auto;
 }
