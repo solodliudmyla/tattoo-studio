@@ -1,4 +1,4 @@
-# TATTOO SALON
+# TATTOO STUDIO
 
 ---
 `HTML5` `SCSS` `JavaScript ES6+` `Bootstrap` `Swiper` `EmailJS` `Mobile first` 
